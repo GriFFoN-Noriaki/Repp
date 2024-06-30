@@ -9,6 +9,7 @@ int main() {
     std::vector<double> firstArray;
     std::vector<double> secondArray;
 
+
     // Разделение элементов по модулю
     for (double num : originalArray) {
         if (std::abs(num) < 20) {
@@ -28,13 +29,14 @@ int main() {
     std::replace(secondArray.begin(), secondArray.end(), minSecond, maxFirst);
 
     // Вывод обновленных массивов
+
     std::cout << "First Array: ";
     for (double num : firstArray) {
         std::cout << num << " ";
     }
     std::cout << std::endl;
 
-    std::cout << "Second Array: ";
+    std::cout << "Второй Аррай: ";
     for (double num : secondArray) {
         std::cout << num << " ";
     }
